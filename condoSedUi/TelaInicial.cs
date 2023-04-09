@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
+using NpgsqlTypes;
+
 
 namespace condoSedUi
 {
@@ -124,7 +127,76 @@ namespace condoSedUi
 
         private void addVagaButton_Click(object sender, EventArgs e)
         {
+            tipoTxtBox2.Visible = true;
+            tipoVagaLbl2.Visible = true;
+            marcaTxtBox2.Visible=true;
+            marcaVagaLbl2.Visible=true;
+            modeloTxtBox2.Visible=true;
+            modeloVagaLbl2.Visible=true;
+            placaTxtBox2.Visible = true;
+            placaVagaLbl2.Visible = true;
+            addVagabutton2.Visible = true;
+        }
 
+        private void garagemSimCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+           if (garagemSimCheckBox.Checked)
+            {
+                tipoTxtBox.Visible = true;
+                tipoVagaLbl.Visible = true;
+                marcaTxtBox.Visible = true;
+                marcaVagaLbl.Visible = true;
+                modeloTxtBox.Visible = true;
+                modeloVagaLbl.Visible = true;
+                placaTxtBox.Visible = true;
+                placaVagaLbl.Visible = true;
+                addVagaButton.Visible = true;
+
+            }
+            else
+            {
+                tipoTxtBox.Visible = false;
+                tipoVagaLbl.Visible = false;
+                marcaTxtBox.Visible = false;
+                marcaVagaLbl.Visible = false;
+                modeloTxtBox.Visible = false;
+                modeloVagaLbl.Visible = false;
+                placaTxtBox.Visible = false;
+                placaVagaLbl.Visible = false;
+                addVagaButton.Visible = false;
+                tipoTxtBox2.Visible = false;
+                tipoVagaLbl2.Visible = false;
+                marcaTxtBox2.Visible = false;
+                marcaVagaLbl2.Visible = false;
+                modeloTxtBox2.Visible = false;
+                placaTxtBox2.Visible = false;
+                placaVagaLbl2.Visible = false;
+                addVagabutton2.Visible = false;
+                tipoTxtBox3.Visible = false;
+                tipoVagaLbl3.Visible = false;
+                marcaTxtBox3.Visible = false;
+                marcaVagaLbl3.Visible = false;
+                modeloTxtBox3.Visible = false;
+                modeloVagaLbl3.Visible = false;
+                placaVagaLbl3.Visible = false;
+                placaTxtBox3.Visible = false;
+                modeloVagaLbl2.Visible=false;
+
+            }
+
+
+        }
+
+        private void addVagabutton2_Click(object sender, EventArgs e)
+        {
+            tipoTxtBox3.Visible = true;
+            tipoVagaLbl3.Visible = true;
+            marcaTxtBox3.Visible = true;
+            marcaVagaLbl3.Visible = true;
+            modeloTxtBox3.Visible = true;
+            modeloVagaLbl3.Visible = true;
+            placaVagaLbl3 .Visible = true;
+            placaTxtBox3 .Visible = true;
         }
     }
 }

@@ -41,6 +41,8 @@
             this.loginLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cadastroCondominoPanel = new System.Windows.Forms.Panel();
+            this.addVagabutton2 = new System.Windows.Forms.Button();
+            this.addVagaButton = new System.Windows.Forms.Button();
             this.placaTxtBox3 = new System.Windows.Forms.TextBox();
             this.placaVagaLbl3 = new System.Windows.Forms.Label();
             this.modeloVagaLbl3 = new System.Windows.Forms.Label();
@@ -103,8 +105,6 @@
             this.buscarButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.addVagaButton = new System.Windows.Forms.Button();
-            this.addVagabutton2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -363,6 +363,34 @@
             this.cadastroCondominoPanel.Size = new System.Drawing.Size(952, 575);
             this.cadastroCondominoPanel.TabIndex = 1;
             // 
+            // addVagabutton2
+            // 
+            this.addVagabutton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addVagabutton2.FlatAppearance.BorderSize = 0;
+            this.addVagabutton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addVagabutton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addVagabutton2.Location = new System.Drawing.Point(744, 377);
+            this.addVagabutton2.Name = "addVagabutton2";
+            this.addVagabutton2.Size = new System.Drawing.Size(26, 23);
+            this.addVagabutton2.TabIndex = 67;
+            this.addVagabutton2.Text = "+";
+            this.addVagabutton2.UseVisualStyleBackColor = true;
+            this.addVagabutton2.Click += new System.EventHandler(this.addVagabutton2_Click);
+            // 
+            // addVagaButton
+            // 
+            this.addVagaButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addVagaButton.FlatAppearance.BorderSize = 0;
+            this.addVagaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addVagaButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addVagaButton.Location = new System.Drawing.Point(744, 350);
+            this.addVagaButton.Name = "addVagaButton";
+            this.addVagaButton.Size = new System.Drawing.Size(26, 23);
+            this.addVagaButton.TabIndex = 66;
+            this.addVagaButton.Text = "+";
+            this.addVagaButton.UseVisualStyleBackColor = true;
+            this.addVagaButton.Click += new System.EventHandler(this.addVagaButton_Click);
+            // 
             // placaTxtBox3
             // 
             this.placaTxtBox3.Location = new System.Drawing.Point(639, 404);
@@ -605,6 +633,7 @@
             this.garagemSimCheckBox.TabIndex = 36;
             this.garagemSimCheckBox.Text = "Sim";
             this.garagemSimCheckBox.UseVisualStyleBackColor = true;
+            this.garagemSimCheckBox.CheckedChanged += new System.EventHandler(this.garagemSimCheckBox_CheckedChanged);
             // 
             // label6
             // 
@@ -950,33 +979,6 @@
             this.label2.Size = new System.Drawing.Size(181, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "Cadastro de Condômino";
-            // 
-            // addVagaButton
-            // 
-            this.addVagaButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addVagaButton.FlatAppearance.BorderSize = 0;
-            this.addVagaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addVagaButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addVagaButton.Location = new System.Drawing.Point(744, 350);
-            this.addVagaButton.Name = "addVagaButton";
-            this.addVagaButton.Size = new System.Drawing.Size(26, 23);
-            this.addVagaButton.TabIndex = 66;
-            this.addVagaButton.Text = "+";
-            this.addVagaButton.UseVisualStyleBackColor = true;
-            this.addVagaButton.Click += new System.EventHandler(this.addVagaButton_Click);
-            // 
-            // addVagabutton2
-            // 
-            this.addVagabutton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addVagabutton2.FlatAppearance.BorderSize = 0;
-            this.addVagabutton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addVagabutton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addVagabutton2.Location = new System.Drawing.Point(744, 377);
-            this.addVagabutton2.Name = "addVagabutton2";
-            this.addVagabutton2.Size = new System.Drawing.Size(26, 23);
-            this.addVagabutton2.TabIndex = 67;
-            this.addVagabutton2.Text = "+";
-            this.addVagabutton2.UseVisualStyleBackColor = true;
             // 
             // TelaInicial
             // 

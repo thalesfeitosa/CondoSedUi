@@ -32,7 +32,7 @@ namespace condoSedUi
             NpgsqlConnection cnBd = new NpgsqlConnection();
             cnBd.ConnectionString = "Server = localhost; Port = 5432; Database = condosed;User id= postgres; Password = #abc123#";
 
-            string query = "Select * From system usuarios where nmysyarui =' " + userTextoBox.Text + "'and senha ='" + senhaMasketBox.Text + "'";
+            string query = "Select * From system.usuarios where nmusuario =' " + userTextoBox.Text + "'and senha ='" + senhaMasketBox.Text + "'";
 
             NpgsqlDataAdapter DataAdapter = new NpgsqlDataAdapter(query, cnBd);
             DataTable dt = new DataTable();
@@ -41,8 +41,8 @@ namespace condoSedUi
             if (dt.Rows.Count == 1 )
             {
                 this.Hide();
-                
-                
+
+                                          
                 userTextoBox.Text = string.Empty;
                 senhaMasketBox.Text = string.Empty; 
                 
