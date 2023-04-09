@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "condoSedUi", "condoSedUi.csproj", "{B3642572-E427-40D9-8C53-1E17766B1300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3642572-E427-40D9-8C53-1E17766B1300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3642572-E427-40D9-8C53-1E17766B1300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3642572-E427-40D9-8C53-1E17766B1300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3642572-E427-40D9-8C53-1E17766B1300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9BFD1C8-AD1D-4C69-BA4A-445F50C29B3D}
+	EndGlobalSection
+EndGlobal
