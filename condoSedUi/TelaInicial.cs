@@ -15,7 +15,15 @@ using NpgsqlTypes;
 namespace condoSedUi
 {
     public partial class TelaInicial : Form
+
     {
+        public string usuario
+        {
+            get { return loginLabel.Text; }
+            set { loginLabel.Text = value;}
+
+
+        }
         public TelaInicial()
         {
             InitializeComponent();
