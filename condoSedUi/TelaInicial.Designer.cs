@@ -41,6 +41,15 @@
             this.loginLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cadastroCondominoPanel = new System.Windows.Forms.Panel();
+            this.closeForm = new System.Windows.Forms.Label();
+            this.outroTextBox = new System.Windows.Forms.TextBox();
+            this.outrosCheckBox = new System.Windows.Forms.CheckBox();
+            this.cachorroCheckBox = new System.Windows.Forms.CheckBox();
+            this.gatoCheckBox = new System.Windows.Forms.CheckBox();
+            this.especieLabel = new System.Windows.Forms.Label();
+            this.animaisCheckBoxNao = new System.Windows.Forms.CheckBox();
+            this.animaisCheckBoxSim = new System.Windows.Forms.CheckBox();
+            this.animaisLabel = new System.Windows.Forms.Label();
             this.addVagabutton2 = new System.Windows.Forms.Button();
             this.addVagaButton = new System.Windows.Forms.Button();
             this.placaTxtBox3 = new System.Windows.Forms.TextBox();
@@ -70,21 +79,21 @@
             this.garagemNaoCheckBox = new System.Windows.Forms.CheckBox();
             this.garagemSimCheckBox = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.nascimentoMoradorMaskBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.nascimentoMoradorMaskBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.nascimentoMoradorMaskBox = new System.Windows.Forms.MaskedTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.parentescoMoradorTxtBox3 = new System.Windows.Forms.TextBox();
+            this.parentescoMoradorTxtBox2 = new System.Windows.Forms.TextBox();
+            this.parentescoMoradorTxtBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.nomeMoradorTxtBox3 = new System.Windows.Forms.TextBox();
+            this.nomeMoradorTxtBox2 = new System.Windows.Forms.TextBox();
+            this.nomeMoradorTxtBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -105,6 +114,21 @@
             this.buscarButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.contatoEmergenciaLabel = new System.Windows.Forms.Label();
+            this.nomeEmergenciaLbl = new System.Windows.Forms.Label();
+            this.nomeEmergenciaTextBox = new System.Windows.Forms.TextBox();
+            this.parentescoEmergenciaLbl = new System.Windows.Forms.Label();
+            this.parentescoEmergenciaTextBox = new System.Windows.Forms.TextBox();
+            this.contatoEmergenciaLbl = new System.Windows.Forms.Label();
+            this.contatoEmergenciaMaskBox = new System.Windows.Forms.MaskedTextBox();
+            this.contatoEmergenciaMaskBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.contatoEmergenciaLbl2 = new System.Windows.Forms.Label();
+            this.parentescoEmergenciaTxtBox2 = new System.Windows.Forms.TextBox();
+            this.patentescoEmergenciaLbl2 = new System.Windows.Forms.Label();
+            this.nomeEmergenciaTxtBox2 = new System.Windows.Forms.TextBox();
+            this.nomeEmergenciaLbl2 = new System.Windows.Forms.Label();
+            this.salvarPessoaButton = new System.Windows.Forms.Button();
+            this.cancelarPessoaButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -125,7 +149,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 575);
+            this.panel1.Size = new System.Drawing.Size(186, 624);
             this.panel1.TabIndex = 0;
             // 
             // relatoriosButton
@@ -152,7 +176,7 @@
             this.bdButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bdButton.Font = new System.Drawing.Font("Corbel", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bdButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.bdButton.Location = new System.Drawing.Point(0, 552);
+            this.bdButton.Location = new System.Drawing.Point(0, 601);
             this.bdButton.Name = "bdButton";
             this.bdButton.Size = new System.Drawing.Size(186, 23);
             this.bdButton.TabIndex = 7;
@@ -294,6 +318,30 @@
             // 
             // cadastroCondominoPanel
             // 
+            this.cadastroCondominoPanel.Controls.Add(this.cancelarPessoaButton);
+            this.cadastroCondominoPanel.Controls.Add(this.salvarPessoaButton);
+            this.cadastroCondominoPanel.Controls.Add(this.contatoEmergenciaMaskBox2);
+            this.cadastroCondominoPanel.Controls.Add(this.contatoEmergenciaLbl2);
+            this.cadastroCondominoPanel.Controls.Add(this.parentescoEmergenciaTxtBox2);
+            this.cadastroCondominoPanel.Controls.Add(this.patentescoEmergenciaLbl2);
+            this.cadastroCondominoPanel.Controls.Add(this.nomeEmergenciaTxtBox2);
+            this.cadastroCondominoPanel.Controls.Add(this.nomeEmergenciaLbl2);
+            this.cadastroCondominoPanel.Controls.Add(this.contatoEmergenciaMaskBox);
+            this.cadastroCondominoPanel.Controls.Add(this.contatoEmergenciaLbl);
+            this.cadastroCondominoPanel.Controls.Add(this.parentescoEmergenciaTextBox);
+            this.cadastroCondominoPanel.Controls.Add(this.parentescoEmergenciaLbl);
+            this.cadastroCondominoPanel.Controls.Add(this.nomeEmergenciaTextBox);
+            this.cadastroCondominoPanel.Controls.Add(this.nomeEmergenciaLbl);
+            this.cadastroCondominoPanel.Controls.Add(this.contatoEmergenciaLabel);
+            this.cadastroCondominoPanel.Controls.Add(this.closeForm);
+            this.cadastroCondominoPanel.Controls.Add(this.outroTextBox);
+            this.cadastroCondominoPanel.Controls.Add(this.outrosCheckBox);
+            this.cadastroCondominoPanel.Controls.Add(this.cachorroCheckBox);
+            this.cadastroCondominoPanel.Controls.Add(this.gatoCheckBox);
+            this.cadastroCondominoPanel.Controls.Add(this.especieLabel);
+            this.cadastroCondominoPanel.Controls.Add(this.animaisCheckBoxNao);
+            this.cadastroCondominoPanel.Controls.Add(this.animaisCheckBoxSim);
+            this.cadastroCondominoPanel.Controls.Add(this.animaisLabel);
             this.cadastroCondominoPanel.Controls.Add(this.addVagabutton2);
             this.cadastroCondominoPanel.Controls.Add(this.addVagaButton);
             this.cadastroCondominoPanel.Controls.Add(this.placaTxtBox3);
@@ -323,21 +371,21 @@
             this.cadastroCondominoPanel.Controls.Add(this.garagemNaoCheckBox);
             this.cadastroCondominoPanel.Controls.Add(this.garagemSimCheckBox);
             this.cadastroCondominoPanel.Controls.Add(this.label6);
-            this.cadastroCondominoPanel.Controls.Add(this.maskedTextBox3);
-            this.cadastroCondominoPanel.Controls.Add(this.maskedTextBox2);
-            this.cadastroCondominoPanel.Controls.Add(this.maskedTextBox1);
+            this.cadastroCondominoPanel.Controls.Add(this.nascimentoMoradorMaskBox3);
+            this.cadastroCondominoPanel.Controls.Add(this.nascimentoMoradorMaskBox2);
+            this.cadastroCondominoPanel.Controls.Add(this.nascimentoMoradorMaskBox);
             this.cadastroCondominoPanel.Controls.Add(this.label17);
             this.cadastroCondominoPanel.Controls.Add(this.label16);
             this.cadastroCondominoPanel.Controls.Add(this.label15);
-            this.cadastroCondominoPanel.Controls.Add(this.textBox7);
-            this.cadastroCondominoPanel.Controls.Add(this.textBox6);
-            this.cadastroCondominoPanel.Controls.Add(this.textBox5);
+            this.cadastroCondominoPanel.Controls.Add(this.parentescoMoradorTxtBox3);
+            this.cadastroCondominoPanel.Controls.Add(this.parentescoMoradorTxtBox2);
+            this.cadastroCondominoPanel.Controls.Add(this.parentescoMoradorTxtBox);
             this.cadastroCondominoPanel.Controls.Add(this.label14);
             this.cadastroCondominoPanel.Controls.Add(this.label13);
             this.cadastroCondominoPanel.Controls.Add(this.label12);
-            this.cadastroCondominoPanel.Controls.Add(this.textBox4);
-            this.cadastroCondominoPanel.Controls.Add(this.textBox3);
-            this.cadastroCondominoPanel.Controls.Add(this.textBox2);
+            this.cadastroCondominoPanel.Controls.Add(this.nomeMoradorTxtBox3);
+            this.cadastroCondominoPanel.Controls.Add(this.nomeMoradorTxtBox2);
+            this.cadastroCondominoPanel.Controls.Add(this.nomeMoradorTxtBox);
             this.cadastroCondominoPanel.Controls.Add(this.label11);
             this.cadastroCondominoPanel.Controls.Add(this.label10);
             this.cadastroCondominoPanel.Controls.Add(this.label9);
@@ -360,8 +408,107 @@
             this.cadastroCondominoPanel.Controls.Add(this.label2);
             this.cadastroCondominoPanel.Location = new System.Drawing.Point(192, 0);
             this.cadastroCondominoPanel.Name = "cadastroCondominoPanel";
-            this.cadastroCondominoPanel.Size = new System.Drawing.Size(952, 575);
+            this.cadastroCondominoPanel.Size = new System.Drawing.Size(952, 612);
             this.cadastroCondominoPanel.TabIndex = 1;
+            // 
+            // closeForm
+            // 
+            this.closeForm.AutoSize = true;
+            this.closeForm.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.closeForm.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeForm.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.closeForm.Location = new System.Drawing.Point(934, 0);
+            this.closeForm.Name = "closeForm";
+            this.closeForm.Size = new System.Drawing.Size(21, 18);
+            this.closeForm.TabIndex = 76;
+            this.closeForm.Text = "X";
+            this.closeForm.Click += new System.EventHandler(this.closeForm_Click);
+            // 
+            // outroTextBox
+            // 
+            this.outroTextBox.Location = new System.Drawing.Point(314, 466);
+            this.outroTextBox.Name = "outroTextBox";
+            this.outroTextBox.Size = new System.Drawing.Size(121, 20);
+            this.outroTextBox.TabIndex = 75;
+            // 
+            // outrosCheckBox
+            // 
+            this.outrosCheckBox.AutoSize = true;
+            this.outrosCheckBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.outrosCheckBox.Location = new System.Drawing.Point(254, 468);
+            this.outrosCheckBox.Name = "outrosCheckBox";
+            this.outrosCheckBox.Size = new System.Drawing.Size(57, 17);
+            this.outrosCheckBox.TabIndex = 74;
+            this.outrosCheckBox.Text = "Outros";
+            this.outrosCheckBox.UseVisualStyleBackColor = true;
+            this.outrosCheckBox.CheckedChanged += new System.EventHandler(this.outrosCheckBox_CheckedChanged);
+            // 
+            // cachorroCheckBox
+            // 
+            this.cachorroCheckBox.AutoSize = true;
+            this.cachorroCheckBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cachorroCheckBox.Location = new System.Drawing.Point(183, 468);
+            this.cachorroCheckBox.Name = "cachorroCheckBox";
+            this.cachorroCheckBox.Size = new System.Drawing.Size(69, 17);
+            this.cachorroCheckBox.TabIndex = 73;
+            this.cachorroCheckBox.Text = "Cachorro";
+            this.cachorroCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // gatoCheckBox
+            // 
+            this.gatoCheckBox.AutoSize = true;
+            this.gatoCheckBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gatoCheckBox.Location = new System.Drawing.Point(134, 468);
+            this.gatoCheckBox.Name = "gatoCheckBox";
+            this.gatoCheckBox.Size = new System.Drawing.Size(49, 17);
+            this.gatoCheckBox.TabIndex = 72;
+            this.gatoCheckBox.Text = "Gato";
+            this.gatoCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // especieLabel
+            // 
+            this.especieLabel.AutoSize = true;
+            this.especieLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.especieLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.especieLabel.Location = new System.Drawing.Point(48, 463);
+            this.especieLabel.Name = "especieLabel";
+            this.especieLabel.Size = new System.Drawing.Size(73, 22);
+            this.especieLabel.TabIndex = 71;
+            this.especieLabel.Text = "Espécie:";
+            // 
+            // animaisCheckBoxNao
+            // 
+            this.animaisCheckBoxNao.AutoSize = true;
+            this.animaisCheckBoxNao.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.animaisCheckBoxNao.Location = new System.Drawing.Point(183, 446);
+            this.animaisCheckBoxNao.Name = "animaisCheckBoxNao";
+            this.animaisCheckBoxNao.Size = new System.Drawing.Size(46, 17);
+            this.animaisCheckBoxNao.TabIndex = 70;
+            this.animaisCheckBoxNao.Text = "Não";
+            this.animaisCheckBoxNao.UseVisualStyleBackColor = true;
+            // 
+            // animaisCheckBoxSim
+            // 
+            this.animaisCheckBoxSim.AutoSize = true;
+            this.animaisCheckBoxSim.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.animaisCheckBoxSim.Location = new System.Drawing.Point(134, 446);
+            this.animaisCheckBoxSim.Name = "animaisCheckBoxSim";
+            this.animaisCheckBoxSim.Size = new System.Drawing.Size(43, 17);
+            this.animaisCheckBoxSim.TabIndex = 69;
+            this.animaisCheckBoxSim.Text = "Sim";
+            this.animaisCheckBoxSim.UseVisualStyleBackColor = true;
+            this.animaisCheckBoxSim.CheckedChanged += new System.EventHandler(this.animaisCheckBoxSim_CheckedChanged);
+            // 
+            // animaisLabel
+            // 
+            this.animaisLabel.AutoSize = true;
+            this.animaisLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.animaisLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.animaisLabel.Location = new System.Drawing.Point(48, 441);
+            this.animaisLabel.Name = "animaisLabel";
+            this.animaisLabel.Size = new System.Drawing.Size(76, 22);
+            this.animaisLabel.TabIndex = 68;
+            this.animaisLabel.Text = "Animais:";
             // 
             // addVagabutton2
             // 
@@ -646,32 +793,32 @@
             this.label6.TabIndex = 35;
             this.label6.Text = "Vaga Garagem";
             // 
-            // maskedTextBox3
+            // nascimentoMoradorMaskBox3
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(777, 289);
-            this.maskedTextBox3.Mask = "00/00/0000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox3.TabIndex = 34;
-            this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
+            this.nascimentoMoradorMaskBox3.Location = new System.Drawing.Point(777, 289);
+            this.nascimentoMoradorMaskBox3.Mask = "00/00/0000";
+            this.nascimentoMoradorMaskBox3.Name = "nascimentoMoradorMaskBox3";
+            this.nascimentoMoradorMaskBox3.Size = new System.Drawing.Size(100, 20);
+            this.nascimentoMoradorMaskBox3.TabIndex = 34;
+            this.nascimentoMoradorMaskBox3.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox2
+            // nascimentoMoradorMaskBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(777, 255);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 33;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            this.nascimentoMoradorMaskBox2.Location = new System.Drawing.Point(777, 255);
+            this.nascimentoMoradorMaskBox2.Mask = "00/00/0000";
+            this.nascimentoMoradorMaskBox2.Name = "nascimentoMoradorMaskBox2";
+            this.nascimentoMoradorMaskBox2.Size = new System.Drawing.Size(100, 20);
+            this.nascimentoMoradorMaskBox2.TabIndex = 33;
+            this.nascimentoMoradorMaskBox2.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox1
+            // nascimentoMoradorMaskBox
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(777, 222);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 32;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.nascimentoMoradorMaskBox.Location = new System.Drawing.Point(777, 222);
+            this.nascimentoMoradorMaskBox.Mask = "00/00/0000";
+            this.nascimentoMoradorMaskBox.Name = "nascimentoMoradorMaskBox";
+            this.nascimentoMoradorMaskBox.Size = new System.Drawing.Size(100, 20);
+            this.nascimentoMoradorMaskBox.TabIndex = 32;
+            this.nascimentoMoradorMaskBox.ValidatingType = typeof(System.DateTime);
             // 
             // label17
             // 
@@ -706,26 +853,26 @@
             this.label15.TabIndex = 29;
             this.label15.Text = "Dt. Nasc.";
             // 
-            // textBox7
+            // parentescoMoradorTxtBox3
             // 
-            this.textBox7.Location = new System.Drawing.Point(462, 287);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(225, 20);
-            this.textBox7.TabIndex = 28;
+            this.parentescoMoradorTxtBox3.Location = new System.Drawing.Point(462, 287);
+            this.parentescoMoradorTxtBox3.Name = "parentescoMoradorTxtBox3";
+            this.parentescoMoradorTxtBox3.Size = new System.Drawing.Size(225, 20);
+            this.parentescoMoradorTxtBox3.TabIndex = 28;
             // 
-            // textBox6
+            // parentescoMoradorTxtBox2
             // 
-            this.textBox6.Location = new System.Drawing.Point(462, 255);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(225, 20);
-            this.textBox6.TabIndex = 27;
+            this.parentescoMoradorTxtBox2.Location = new System.Drawing.Point(462, 255);
+            this.parentescoMoradorTxtBox2.Name = "parentescoMoradorTxtBox2";
+            this.parentescoMoradorTxtBox2.Size = new System.Drawing.Size(225, 20);
+            this.parentescoMoradorTxtBox2.TabIndex = 27;
             // 
-            // textBox5
+            // parentescoMoradorTxtBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(462, 223);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(225, 20);
-            this.textBox5.TabIndex = 26;
+            this.parentescoMoradorTxtBox.Location = new System.Drawing.Point(462, 223);
+            this.parentescoMoradorTxtBox.Name = "parentescoMoradorTxtBox";
+            this.parentescoMoradorTxtBox.Size = new System.Drawing.Size(225, 20);
+            this.parentescoMoradorTxtBox.TabIndex = 26;
             // 
             // label14
             // 
@@ -743,7 +890,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label13.Location = new System.Drawing.Point(357, 254);
+            this.label13.Location = new System.Drawing.Point(357, 255);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(99, 22);
             this.label13.TabIndex = 24;
@@ -760,26 +907,26 @@
             this.label12.TabIndex = 23;
             this.label12.Text = "Parentesco:";
             // 
-            // textBox4
+            // nomeMoradorTxtBox3
             // 
-            this.textBox4.Location = new System.Drawing.Point(119, 286);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(225, 20);
-            this.textBox4.TabIndex = 22;
+            this.nomeMoradorTxtBox3.Location = new System.Drawing.Point(119, 286);
+            this.nomeMoradorTxtBox3.Name = "nomeMoradorTxtBox3";
+            this.nomeMoradorTxtBox3.Size = new System.Drawing.Size(225, 20);
+            this.nomeMoradorTxtBox3.TabIndex = 22;
             // 
-            // textBox3
+            // nomeMoradorTxtBox2
             // 
-            this.textBox3.Location = new System.Drawing.Point(119, 257);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(225, 20);
-            this.textBox3.TabIndex = 21;
+            this.nomeMoradorTxtBox2.Location = new System.Drawing.Point(119, 257);
+            this.nomeMoradorTxtBox2.Name = "nomeMoradorTxtBox2";
+            this.nomeMoradorTxtBox2.Size = new System.Drawing.Size(225, 20);
+            this.nomeMoradorTxtBox2.TabIndex = 21;
             // 
-            // textBox2
+            // nomeMoradorTxtBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 226);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 20);
-            this.textBox2.TabIndex = 20;
+            this.nomeMoradorTxtBox.Location = new System.Drawing.Point(119, 226);
+            this.nomeMoradorTxtBox.Name = "nomeMoradorTxtBox";
+            this.nomeMoradorTxtBox.Size = new System.Drawing.Size(225, 20);
+            this.nomeMoradorTxtBox.TabIndex = 20;
             // 
             // label11
             // 
@@ -980,12 +1127,160 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Cadastro de Condômino";
             // 
+            // contatoEmergenciaLabel
+            // 
+            this.contatoEmergenciaLabel.AutoSize = true;
+            this.contatoEmergenciaLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contatoEmergenciaLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.contatoEmergenciaLabel.Location = new System.Drawing.Point(48, 504);
+            this.contatoEmergenciaLabel.Name = "contatoEmergenciaLabel";
+            this.contatoEmergenciaLabel.Size = new System.Drawing.Size(164, 22);
+            this.contatoEmergenciaLabel.TabIndex = 77;
+            this.contatoEmergenciaLabel.Text = "Contato Emergência";
+            // 
+            // nomeEmergenciaLbl
+            // 
+            this.nomeEmergenciaLbl.AutoSize = true;
+            this.nomeEmergenciaLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeEmergenciaLbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.nomeEmergenciaLbl.Location = new System.Drawing.Point(48, 526);
+            this.nomeEmergenciaLbl.Name = "nomeEmergenciaLbl";
+            this.nomeEmergenciaLbl.Size = new System.Drawing.Size(60, 22);
+            this.nomeEmergenciaLbl.TabIndex = 78;
+            this.nomeEmergenciaLbl.Text = "Nome:";
+            // 
+            // nomeEmergenciaTextBox
+            // 
+            this.nomeEmergenciaTextBox.Location = new System.Drawing.Point(108, 527);
+            this.nomeEmergenciaTextBox.Name = "nomeEmergenciaTextBox";
+            this.nomeEmergenciaTextBox.Size = new System.Drawing.Size(144, 20);
+            this.nomeEmergenciaTextBox.TabIndex = 80;
+            // 
+            // parentescoEmergenciaLbl
+            // 
+            this.parentescoEmergenciaLbl.AutoSize = true;
+            this.parentescoEmergenciaLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parentescoEmergenciaLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.parentescoEmergenciaLbl.Location = new System.Drawing.Point(258, 526);
+            this.parentescoEmergenciaLbl.Name = "parentescoEmergenciaLbl";
+            this.parentescoEmergenciaLbl.Size = new System.Drawing.Size(99, 22);
+            this.parentescoEmergenciaLbl.TabIndex = 81;
+            this.parentescoEmergenciaLbl.Text = "Parentesco:";
+            // 
+            // parentescoEmergenciaTextBox
+            // 
+            this.parentescoEmergenciaTextBox.Location = new System.Drawing.Point(352, 528);
+            this.parentescoEmergenciaTextBox.Name = "parentescoEmergenciaTextBox";
+            this.parentescoEmergenciaTextBox.Size = new System.Drawing.Size(144, 20);
+            this.parentescoEmergenciaTextBox.TabIndex = 82;
+            // 
+            // contatoEmergenciaLbl
+            // 
+            this.contatoEmergenciaLbl.AutoSize = true;
+            this.contatoEmergenciaLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contatoEmergenciaLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.contatoEmergenciaLbl.Location = new System.Drawing.Point(502, 527);
+            this.contatoEmergenciaLbl.Name = "contatoEmergenciaLbl";
+            this.contatoEmergenciaLbl.Size = new System.Drawing.Size(76, 22);
+            this.contatoEmergenciaLbl.TabIndex = 83;
+            this.contatoEmergenciaLbl.Text = "Contato:";
+            // 
+            // contatoEmergenciaMaskBox
+            // 
+            this.contatoEmergenciaMaskBox.Location = new System.Drawing.Point(575, 529);
+            this.contatoEmergenciaMaskBox.Mask = "(999)00000-0000";
+            this.contatoEmergenciaMaskBox.Name = "contatoEmergenciaMaskBox";
+            this.contatoEmergenciaMaskBox.Size = new System.Drawing.Size(147, 20);
+            this.contatoEmergenciaMaskBox.TabIndex = 84;
+            // 
+            // contatoEmergenciaMaskBox2
+            // 
+            this.contatoEmergenciaMaskBox2.Location = new System.Drawing.Point(575, 552);
+            this.contatoEmergenciaMaskBox2.Mask = "(999)00000-0000";
+            this.contatoEmergenciaMaskBox2.Name = "contatoEmergenciaMaskBox2";
+            this.contatoEmergenciaMaskBox2.Size = new System.Drawing.Size(147, 20);
+            this.contatoEmergenciaMaskBox2.TabIndex = 90;
+            // 
+            // contatoEmergenciaLbl2
+            // 
+            this.contatoEmergenciaLbl2.AutoSize = true;
+            this.contatoEmergenciaLbl2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contatoEmergenciaLbl2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.contatoEmergenciaLbl2.Location = new System.Drawing.Point(502, 550);
+            this.contatoEmergenciaLbl2.Name = "contatoEmergenciaLbl2";
+            this.contatoEmergenciaLbl2.Size = new System.Drawing.Size(76, 22);
+            this.contatoEmergenciaLbl2.TabIndex = 89;
+            this.contatoEmergenciaLbl2.Text = "Contato:";
+            // 
+            // parentescoEmergenciaTxtBox2
+            // 
+            this.parentescoEmergenciaTxtBox2.Location = new System.Drawing.Point(352, 551);
+            this.parentescoEmergenciaTxtBox2.Name = "parentescoEmergenciaTxtBox2";
+            this.parentescoEmergenciaTxtBox2.Size = new System.Drawing.Size(144, 20);
+            this.parentescoEmergenciaTxtBox2.TabIndex = 88;
+            // 
+            // patentescoEmergenciaLbl2
+            // 
+            this.patentescoEmergenciaLbl2.AutoSize = true;
+            this.patentescoEmergenciaLbl2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patentescoEmergenciaLbl2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.patentescoEmergenciaLbl2.Location = new System.Drawing.Point(258, 549);
+            this.patentescoEmergenciaLbl2.Name = "patentescoEmergenciaLbl2";
+            this.patentescoEmergenciaLbl2.Size = new System.Drawing.Size(99, 22);
+            this.patentescoEmergenciaLbl2.TabIndex = 87;
+            this.patentescoEmergenciaLbl2.Text = "Parentesco:";
+            // 
+            // nomeEmergenciaTxtBox2
+            // 
+            this.nomeEmergenciaTxtBox2.Location = new System.Drawing.Point(108, 550);
+            this.nomeEmergenciaTxtBox2.Name = "nomeEmergenciaTxtBox2";
+            this.nomeEmergenciaTxtBox2.Size = new System.Drawing.Size(144, 20);
+            this.nomeEmergenciaTxtBox2.TabIndex = 86;
+            // 
+            // nomeEmergenciaLbl2
+            // 
+            this.nomeEmergenciaLbl2.AutoSize = true;
+            this.nomeEmergenciaLbl2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeEmergenciaLbl2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.nomeEmergenciaLbl2.Location = new System.Drawing.Point(48, 549);
+            this.nomeEmergenciaLbl2.Name = "nomeEmergenciaLbl2";
+            this.nomeEmergenciaLbl2.Size = new System.Drawing.Size(60, 22);
+            this.nomeEmergenciaLbl2.TabIndex = 85;
+            this.nomeEmergenciaLbl2.Text = "Nome:";
+            // 
+            // salvarPessoaButton
+            // 
+            this.salvarPessoaButton.FlatAppearance.BorderSize = 0;
+            this.salvarPessoaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salvarPessoaButton.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salvarPessoaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.salvarPessoaButton.Location = new System.Drawing.Point(862, 586);
+            this.salvarPessoaButton.Name = "salvarPessoaButton";
+            this.salvarPessoaButton.Size = new System.Drawing.Size(75, 23);
+            this.salvarPessoaButton.TabIndex = 91;
+            this.salvarPessoaButton.Text = "Salvar";
+            this.salvarPessoaButton.UseVisualStyleBackColor = true;
+            // 
+            // cancelarPessoaButton
+            // 
+            this.cancelarPessoaButton.FlatAppearance.BorderSize = 0;
+            this.cancelarPessoaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelarPessoaButton.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelarPessoaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cancelarPessoaButton.Location = new System.Drawing.Point(781, 586);
+            this.cancelarPessoaButton.Name = "cancelarPessoaButton";
+            this.cancelarPessoaButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelarPessoaButton.TabIndex = 92;
+            this.cancelarPessoaButton.Text = "Cancelar";
+            this.cancelarPessoaButton.UseVisualStyleBackColor = true;
+            this.cancelarPessoaButton.Click += new System.EventHandler(this.cancelarPessoaButton_Click);
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(1156, 575);
+            this.ClientSize = new System.Drawing.Size(1156, 624);
             this.Controls.Add(this.cadastroCondominoPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1034,21 +1329,21 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label proprietarioLabel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox nascimentoMoradorMaskBox3;
+        private System.Windows.Forms.MaskedTextBox nascimentoMoradorMaskBox2;
+        private System.Windows.Forms.MaskedTextBox nascimentoMoradorMaskBox;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox parentescoMoradorTxtBox3;
+        private System.Windows.Forms.TextBox parentescoMoradorTxtBox2;
+        private System.Windows.Forms.TextBox parentescoMoradorTxtBox;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox nomeMoradorTxtBox3;
+        private System.Windows.Forms.TextBox nomeMoradorTxtBox2;
+        private System.Windows.Forms.TextBox nomeMoradorTxtBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -1082,5 +1377,29 @@
         private System.Windows.Forms.Label modeloVagaLbl;
         private System.Windows.Forms.Button addVagaButton;
         private System.Windows.Forms.Button addVagabutton2;
+        private System.Windows.Forms.TextBox outroTextBox;
+        private System.Windows.Forms.CheckBox outrosCheckBox;
+        private System.Windows.Forms.CheckBox cachorroCheckBox;
+        private System.Windows.Forms.CheckBox gatoCheckBox;
+        private System.Windows.Forms.Label especieLabel;
+        private System.Windows.Forms.CheckBox animaisCheckBoxNao;
+        private System.Windows.Forms.CheckBox animaisCheckBoxSim;
+        private System.Windows.Forms.Label animaisLabel;
+        private System.Windows.Forms.Label closeForm;
+        private System.Windows.Forms.Button cancelarPessoaButton;
+        private System.Windows.Forms.Button salvarPessoaButton;
+        private System.Windows.Forms.MaskedTextBox contatoEmergenciaMaskBox2;
+        private System.Windows.Forms.Label contatoEmergenciaLbl2;
+        private System.Windows.Forms.TextBox parentescoEmergenciaTxtBox2;
+        private System.Windows.Forms.Label patentescoEmergenciaLbl2;
+        private System.Windows.Forms.TextBox nomeEmergenciaTxtBox2;
+        private System.Windows.Forms.Label nomeEmergenciaLbl2;
+        private System.Windows.Forms.MaskedTextBox contatoEmergenciaMaskBox;
+        private System.Windows.Forms.Label contatoEmergenciaLbl;
+        private System.Windows.Forms.TextBox parentescoEmergenciaTextBox;
+        private System.Windows.Forms.Label parentescoEmergenciaLbl;
+        private System.Windows.Forms.TextBox nomeEmergenciaTextBox;
+        private System.Windows.Forms.Label nomeEmergenciaLbl;
+        private System.Windows.Forms.Label contatoEmergenciaLabel;
     }
 }

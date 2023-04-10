@@ -84,6 +84,11 @@ namespace condoSedUi
             placaTxtBox.Visible=false;
             placaTxtBox2.Visible = false;
             placaTxtBox3.Visible=false;
+            especieLabel.Visible=false;
+            gatoCheckBox.Visible=false;
+            cachorroCheckBox.Visible=false;
+            outrosCheckBox.Visible=false;
+            outroTextBox.Visible=false;
 
             
 
@@ -164,6 +169,9 @@ namespace condoSedUi
                 placaVagaLbl.Visible = true;
                 addVagaButton.Visible = true;
 
+               
+
+
             }
             else
             {
@@ -209,6 +217,87 @@ namespace condoSedUi
             modeloVagaLbl3.Visible = true;
             placaVagaLbl3 .Visible = true;
             placaTxtBox3 .Visible = true;
+        }
+
+        private void animaisCheckBoxSim_CheckedChanged(object sender, EventArgs e)
+        {
+        if (animaisCheckBoxSim.Checked)
+            {
+                especieLabel.Visible = true;
+                gatoCheckBox.Visible = true;
+                cachorroCheckBox.Visible = true;
+                outrosCheckBox.Visible = true;
+            }
+            else
+            {
+                especieLabel.Visible = false;
+                gatoCheckBox.Visible = false;
+                cachorroCheckBox.Visible = false;
+                outrosCheckBox.Visible = false;
+                outroTextBox.Visible = false;
+            }
+        }
+
+        private void outrosCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (outrosCheckBox.Checked)
+            {
+                outroTextBox.Visible=true;
+            }
+            else
+            {
+                outroTextBox.Visible = false;
+            }
+        }
+
+        private void closeForm_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void cancelarPessoaButton_Click(object sender, EventArgs e)
+        {
+            nomeTextBox.Text = string.Empty;
+            blocoTextBox.Text = string.Empty;
+            aptTextBox.Text = string.Empty;
+            proprietarioTextBox.Text = string.Empty;
+            simCheckBox.Checked = false;
+            naoCheckBox.Checked = false;
+            telefoneMaskBox.Text = string.Empty;
+            nomeMoradorTxtBox.Text = string.Empty;
+            parentescoMoradorTxtBox.Text= string.Empty;
+            nascimentoMoradorMaskBox.Text = string.Empty;
+            nomeMoradorTxtBox2.Text = string.Empty;
+            parentescoMoradorTxtBox2.Text = string.Empty;
+            nascimentoMoradorMaskBox2.Text = string.Empty; nomeMoradorTxtBox.Text = string.Empty;
+            parentescoMoradorTxtBox3.Text = string.Empty;
+            nascimentoMoradorMaskBox3.Text = string.Empty;
+            nomeMoradorTxtBox3.Text = string.Empty;
+            garagemNaoCheckBox.Checked = false;
+            garagemSimCheckBox.Checked = false;
+            tipoTxtBox.Text = string.Empty;
+            modeloTxtBox.Text = string.Empty;
+            marcaTxtBox.Text = string.Empty;
+            placaTxtBox.Text = string.Empty;
+            tipoTxtBox2.Text = string.Empty;
+            modeloTxtBox2.Text = string.Empty;
+            marcaTxtBox2.Text = string.Empty;
+            placaTxtBox2.Text = string.Empty;
+            tipoTxtBox3.Text = string.Empty;
+            modeloTxtBox3.Text = string.Empty;
+            marcaTxtBox3.Text = string.Empty;
+            placaTxtBox3.Text = string.Empty;
+            animaisCheckBoxNao.Checked = false;
+            animaisCheckBoxSim.Checked = false;
+            nomeEmergenciaTextBox.Text = string.Empty;
+            parentescoEmergenciaTextBox.Text = string.Empty;
+            contatoEmergenciaMaskBox.Text = string.Empty;
+            nomeEmergenciaTxtBox2.Text = string.Empty;
+            parentescoEmergenciaTxtBox2.Text = string.Empty;
+            contatoEmergenciaMaskBox2.Text = string.Empty;
+
+
+
         }
     }
 }
