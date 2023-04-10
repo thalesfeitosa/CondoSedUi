@@ -30,12 +30,13 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.userTextoBox = new System.Windows.Forms.TextBox();
             this.senhaMasketBox = new System.Windows.Forms.MaskedTextBox();
+            this.cadastrarUserLbl = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,16 +64,6 @@
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::condoSedUi.Properties.Resources.userblue;
-            this.pictureBox1.Location = new System.Drawing.Point(94, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(98, 73);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -103,7 +94,7 @@
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loginButton.Location = new System.Drawing.Point(94, 279);
+            this.loginButton.Location = new System.Drawing.Point(94, 274);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 23);
             this.loginButton.TabIndex = 3;
@@ -126,12 +117,35 @@
             this.senhaMasketBox.Size = new System.Drawing.Size(160, 20);
             this.senhaMasketBox.TabIndex = 6;
             // 
+            // cadastrarUserLbl
+            // 
+            this.cadastrarUserLbl.AutoSize = true;
+            this.cadastrarUserLbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cadastrarUserLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cadastrarUserLbl.Location = new System.Drawing.Point(88, 305);
+            this.cadastrarUserLbl.Name = "cadastrarUserLbl";
+            this.cadastrarUserLbl.Size = new System.Drawing.Size(91, 13);
+            this.cadastrarUserLbl.TabIndex = 7;
+            this.cadastrarUserLbl.Text = "Cadastrar Usuário";
+            this.cadastrarUserLbl.Click += new System.EventHandler(this.cadastrarUserLbl_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::condoSedUi.Properties.Resources.userblue;
+            this.pictureBox1.Location = new System.Drawing.Point(94, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 73);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(275, 338);
+            this.Controls.Add(this.cadastrarUserLbl);
             this.Controls.Add(this.senhaMasketBox);
             this.Controls.Add(this.userTextoBox);
             this.Controls.Add(this.loginButton);
@@ -142,6 +156,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -159,5 +174,6 @@
         private System.Windows.Forms.TextBox userTextoBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MaskedTextBox senhaMasketBox;
+        private System.Windows.Forms.Label cadastrarUserLbl;
     }
 }

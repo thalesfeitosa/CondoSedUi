@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,7 @@ namespace condoSedUi
         {
             InitializeComponent();
         }
+
 
         private void bdButton_Click(object sender, EventArgs e)
         {
@@ -86,10 +88,12 @@ namespace condoSedUi
 
         }
 
+
         public void loginLabel_Click(object sender, EventArgs e)
         {
             LoginForm log = new LoginForm();
             log.ShowDialog();
+            
         }
 
         private void simCheckBox_CheckedChanged(object sender, EventArgs e)

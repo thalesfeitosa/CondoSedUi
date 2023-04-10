@@ -29,20 +29,25 @@ namespace condoSedUi
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+
             NpgsqlConnection cnBd = new NpgsqlConnection();
             cnBd.ConnectionString = "Server = localhost; Port = 5432; Database = condosed;User id= postgres; Password = #abc123#";
 
-            string query = "Select * From system.usuarios where nmusuario =' " + userTextoBox.Text + "'and senha ='" + senhaMasketBox.Text + "'";
-
+            string query = "Select * From system.usuarios where nmusuario ='" + userTextoBox.Text + "' and senha = '" + senhaMasketBox.Text + "'";
             NpgsqlDataAdapter DataAdapter = new NpgsqlDataAdapter(query, cnBd);
             DataTable dt = new DataTable();
             DataAdapter.Fill(dt);
 
+            
+
             if (dt.Rows.Count == 1 )
             {
-                this.Hide();
+                /* this.Hide();
+                Loading load = new Loading();
+                load.ShowDialog();*/
 
-                                          
+               
+                
                 userTextoBox.Text = string.Empty;
                 senhaMasketBox.Text = string.Empty; 
                 
@@ -54,6 +59,31 @@ namespace condoSedUi
                 MessageBox.Show("Usuário ou Senha Incorreta! Verifique", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 userTextoBox.Select();
             }
+
+            string usuarioLogado = userTextoBox.Text;
+
+            if (usuarioLogado != null)
+            {
+                TelaInicial Tn= new TelaInicial();
+                Tn.loginLabel.Text = usuarioLogado;
+                this.Hide();
+                Tn.ShowDialog();
+            }
+
+            
+        }
+        
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastrarUserLbl_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CadastrarForm cad = new CadastrarForm();
+            cad.ShowDialog();
         }
     }
 }

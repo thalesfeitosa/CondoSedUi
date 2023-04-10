@@ -30,8 +30,8 @@ namespace condoSedUi
             {
                 timer1.Enabled = false;
                 this.Hide();
-                TelaInicial Tin = new TelaInicial();
-                Tin.ShowDialog();
+                LoginForm loF = new LoginForm();
+                loF.ShowDialog();
             }            
             else porcentagemLabel.Text = progressBar1.Value.ToString() + "%";
         }
