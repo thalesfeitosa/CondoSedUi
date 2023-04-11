@@ -41,6 +41,21 @@
             this.loginLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cadastroCondominoPanel = new System.Windows.Forms.Panel();
+            this.cancelarPessoaButton = new System.Windows.Forms.Button();
+            this.salvarPessoaButton = new System.Windows.Forms.Button();
+            this.contatoEmergenciaMaskBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.contatoEmergenciaLbl2 = new System.Windows.Forms.Label();
+            this.parentescoEmergenciaTxtBox2 = new System.Windows.Forms.TextBox();
+            this.patentescoEmergenciaLbl2 = new System.Windows.Forms.Label();
+            this.nomeEmergenciaTxtBox2 = new System.Windows.Forms.TextBox();
+            this.nomeEmergenciaLbl2 = new System.Windows.Forms.Label();
+            this.contatoEmergenciaMaskBox = new System.Windows.Forms.MaskedTextBox();
+            this.contatoEmergenciaLbl = new System.Windows.Forms.Label();
+            this.parentescoEmergenciaTextBox = new System.Windows.Forms.TextBox();
+            this.parentescoEmergenciaLbl = new System.Windows.Forms.Label();
+            this.nomeEmergenciaTextBox = new System.Windows.Forms.TextBox();
+            this.nomeEmergenciaLbl = new System.Windows.Forms.Label();
+            this.contatoEmergenciaLabel = new System.Windows.Forms.Label();
             this.closeForm = new System.Windows.Forms.Label();
             this.outroTextBox = new System.Windows.Forms.TextBox();
             this.outrosCheckBox = new System.Windows.Forms.CheckBox();
@@ -114,21 +129,6 @@
             this.buscarButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.contatoEmergenciaLabel = new System.Windows.Forms.Label();
-            this.nomeEmergenciaLbl = new System.Windows.Forms.Label();
-            this.nomeEmergenciaTextBox = new System.Windows.Forms.TextBox();
-            this.parentescoEmergenciaLbl = new System.Windows.Forms.Label();
-            this.parentescoEmergenciaTextBox = new System.Windows.Forms.TextBox();
-            this.contatoEmergenciaLbl = new System.Windows.Forms.Label();
-            this.contatoEmergenciaMaskBox = new System.Windows.Forms.MaskedTextBox();
-            this.contatoEmergenciaMaskBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.contatoEmergenciaLbl2 = new System.Windows.Forms.Label();
-            this.parentescoEmergenciaTxtBox2 = new System.Windows.Forms.TextBox();
-            this.patentescoEmergenciaLbl2 = new System.Windows.Forms.Label();
-            this.nomeEmergenciaTxtBox2 = new System.Windows.Forms.TextBox();
-            this.nomeEmergenciaLbl2 = new System.Windows.Forms.Label();
-            this.salvarPessoaButton = new System.Windows.Forms.Button();
-            this.cancelarPessoaButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -410,6 +410,155 @@
             this.cadastroCondominoPanel.Name = "cadastroCondominoPanel";
             this.cadastroCondominoPanel.Size = new System.Drawing.Size(952, 612);
             this.cadastroCondominoPanel.TabIndex = 1;
+            // 
+            // cancelarPessoaButton
+            // 
+            this.cancelarPessoaButton.FlatAppearance.BorderSize = 0;
+            this.cancelarPessoaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelarPessoaButton.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelarPessoaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cancelarPessoaButton.Location = new System.Drawing.Point(781, 586);
+            this.cancelarPessoaButton.Name = "cancelarPessoaButton";
+            this.cancelarPessoaButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelarPessoaButton.TabIndex = 92;
+            this.cancelarPessoaButton.Text = "Cancelar";
+            this.cancelarPessoaButton.UseVisualStyleBackColor = true;
+            this.cancelarPessoaButton.Click += new System.EventHandler(this.cancelarPessoaButton_Click);
+            // 
+            // salvarPessoaButton
+            // 
+            this.salvarPessoaButton.FlatAppearance.BorderSize = 0;
+            this.salvarPessoaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salvarPessoaButton.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salvarPessoaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.salvarPessoaButton.Location = new System.Drawing.Point(862, 586);
+            this.salvarPessoaButton.Name = "salvarPessoaButton";
+            this.salvarPessoaButton.Size = new System.Drawing.Size(75, 23);
+            this.salvarPessoaButton.TabIndex = 91;
+            this.salvarPessoaButton.Text = "Salvar";
+            this.salvarPessoaButton.UseVisualStyleBackColor = true;
+            this.salvarPessoaButton.Click += new System.EventHandler(this.salvarPessoaButton_Click);
+            // 
+            // contatoEmergenciaMaskBox2
+            // 
+            this.contatoEmergenciaMaskBox2.Location = new System.Drawing.Point(575, 552);
+            this.contatoEmergenciaMaskBox2.Mask = "(999)00000-0000";
+            this.contatoEmergenciaMaskBox2.Name = "contatoEmergenciaMaskBox2";
+            this.contatoEmergenciaMaskBox2.Size = new System.Drawing.Size(147, 20);
+            this.contatoEmergenciaMaskBox2.TabIndex = 90;
+            // 
+            // contatoEmergenciaLbl2
+            // 
+            this.contatoEmergenciaLbl2.AutoSize = true;
+            this.contatoEmergenciaLbl2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contatoEmergenciaLbl2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.contatoEmergenciaLbl2.Location = new System.Drawing.Point(502, 550);
+            this.contatoEmergenciaLbl2.Name = "contatoEmergenciaLbl2";
+            this.contatoEmergenciaLbl2.Size = new System.Drawing.Size(76, 22);
+            this.contatoEmergenciaLbl2.TabIndex = 89;
+            this.contatoEmergenciaLbl2.Text = "Contato:";
+            // 
+            // parentescoEmergenciaTxtBox2
+            // 
+            this.parentescoEmergenciaTxtBox2.Location = new System.Drawing.Point(352, 551);
+            this.parentescoEmergenciaTxtBox2.Name = "parentescoEmergenciaTxtBox2";
+            this.parentescoEmergenciaTxtBox2.Size = new System.Drawing.Size(144, 20);
+            this.parentescoEmergenciaTxtBox2.TabIndex = 88;
+            // 
+            // patentescoEmergenciaLbl2
+            // 
+            this.patentescoEmergenciaLbl2.AutoSize = true;
+            this.patentescoEmergenciaLbl2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patentescoEmergenciaLbl2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.patentescoEmergenciaLbl2.Location = new System.Drawing.Point(258, 549);
+            this.patentescoEmergenciaLbl2.Name = "patentescoEmergenciaLbl2";
+            this.patentescoEmergenciaLbl2.Size = new System.Drawing.Size(99, 22);
+            this.patentescoEmergenciaLbl2.TabIndex = 87;
+            this.patentescoEmergenciaLbl2.Text = "Parentesco:";
+            // 
+            // nomeEmergenciaTxtBox2
+            // 
+            this.nomeEmergenciaTxtBox2.Location = new System.Drawing.Point(108, 550);
+            this.nomeEmergenciaTxtBox2.Name = "nomeEmergenciaTxtBox2";
+            this.nomeEmergenciaTxtBox2.Size = new System.Drawing.Size(144, 20);
+            this.nomeEmergenciaTxtBox2.TabIndex = 86;
+            // 
+            // nomeEmergenciaLbl2
+            // 
+            this.nomeEmergenciaLbl2.AutoSize = true;
+            this.nomeEmergenciaLbl2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeEmergenciaLbl2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.nomeEmergenciaLbl2.Location = new System.Drawing.Point(48, 549);
+            this.nomeEmergenciaLbl2.Name = "nomeEmergenciaLbl2";
+            this.nomeEmergenciaLbl2.Size = new System.Drawing.Size(60, 22);
+            this.nomeEmergenciaLbl2.TabIndex = 85;
+            this.nomeEmergenciaLbl2.Text = "Nome:";
+            // 
+            // contatoEmergenciaMaskBox
+            // 
+            this.contatoEmergenciaMaskBox.Location = new System.Drawing.Point(575, 529);
+            this.contatoEmergenciaMaskBox.Mask = "(999)00000-0000";
+            this.contatoEmergenciaMaskBox.Name = "contatoEmergenciaMaskBox";
+            this.contatoEmergenciaMaskBox.Size = new System.Drawing.Size(147, 20);
+            this.contatoEmergenciaMaskBox.TabIndex = 84;
+            // 
+            // contatoEmergenciaLbl
+            // 
+            this.contatoEmergenciaLbl.AutoSize = true;
+            this.contatoEmergenciaLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contatoEmergenciaLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.contatoEmergenciaLbl.Location = new System.Drawing.Point(502, 527);
+            this.contatoEmergenciaLbl.Name = "contatoEmergenciaLbl";
+            this.contatoEmergenciaLbl.Size = new System.Drawing.Size(76, 22);
+            this.contatoEmergenciaLbl.TabIndex = 83;
+            this.contatoEmergenciaLbl.Text = "Contato:";
+            // 
+            // parentescoEmergenciaTextBox
+            // 
+            this.parentescoEmergenciaTextBox.Location = new System.Drawing.Point(352, 528);
+            this.parentescoEmergenciaTextBox.Name = "parentescoEmergenciaTextBox";
+            this.parentescoEmergenciaTextBox.Size = new System.Drawing.Size(144, 20);
+            this.parentescoEmergenciaTextBox.TabIndex = 82;
+            // 
+            // parentescoEmergenciaLbl
+            // 
+            this.parentescoEmergenciaLbl.AutoSize = true;
+            this.parentescoEmergenciaLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parentescoEmergenciaLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.parentescoEmergenciaLbl.Location = new System.Drawing.Point(258, 526);
+            this.parentescoEmergenciaLbl.Name = "parentescoEmergenciaLbl";
+            this.parentescoEmergenciaLbl.Size = new System.Drawing.Size(99, 22);
+            this.parentescoEmergenciaLbl.TabIndex = 81;
+            this.parentescoEmergenciaLbl.Text = "Parentesco:";
+            // 
+            // nomeEmergenciaTextBox
+            // 
+            this.nomeEmergenciaTextBox.Location = new System.Drawing.Point(108, 527);
+            this.nomeEmergenciaTextBox.Name = "nomeEmergenciaTextBox";
+            this.nomeEmergenciaTextBox.Size = new System.Drawing.Size(144, 20);
+            this.nomeEmergenciaTextBox.TabIndex = 80;
+            // 
+            // nomeEmergenciaLbl
+            // 
+            this.nomeEmergenciaLbl.AutoSize = true;
+            this.nomeEmergenciaLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeEmergenciaLbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.nomeEmergenciaLbl.Location = new System.Drawing.Point(48, 526);
+            this.nomeEmergenciaLbl.Name = "nomeEmergenciaLbl";
+            this.nomeEmergenciaLbl.Size = new System.Drawing.Size(60, 22);
+            this.nomeEmergenciaLbl.TabIndex = 78;
+            this.nomeEmergenciaLbl.Text = "Nome:";
+            // 
+            // contatoEmergenciaLabel
+            // 
+            this.contatoEmergenciaLabel.AutoSize = true;
+            this.contatoEmergenciaLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contatoEmergenciaLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.contatoEmergenciaLabel.Location = new System.Drawing.Point(48, 504);
+            this.contatoEmergenciaLabel.Name = "contatoEmergenciaLabel";
+            this.contatoEmergenciaLabel.Size = new System.Drawing.Size(164, 22);
+            this.contatoEmergenciaLabel.TabIndex = 77;
+            this.contatoEmergenciaLabel.Text = "Contato Emergência";
             // 
             // closeForm
             // 
@@ -1126,154 +1275,6 @@
             this.label2.Size = new System.Drawing.Size(181, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "Cadastro de Condômino";
-            // 
-            // contatoEmergenciaLabel
-            // 
-            this.contatoEmergenciaLabel.AutoSize = true;
-            this.contatoEmergenciaLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contatoEmergenciaLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.contatoEmergenciaLabel.Location = new System.Drawing.Point(48, 504);
-            this.contatoEmergenciaLabel.Name = "contatoEmergenciaLabel";
-            this.contatoEmergenciaLabel.Size = new System.Drawing.Size(164, 22);
-            this.contatoEmergenciaLabel.TabIndex = 77;
-            this.contatoEmergenciaLabel.Text = "Contato Emergência";
-            // 
-            // nomeEmergenciaLbl
-            // 
-            this.nomeEmergenciaLbl.AutoSize = true;
-            this.nomeEmergenciaLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeEmergenciaLbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.nomeEmergenciaLbl.Location = new System.Drawing.Point(48, 526);
-            this.nomeEmergenciaLbl.Name = "nomeEmergenciaLbl";
-            this.nomeEmergenciaLbl.Size = new System.Drawing.Size(60, 22);
-            this.nomeEmergenciaLbl.TabIndex = 78;
-            this.nomeEmergenciaLbl.Text = "Nome:";
-            // 
-            // nomeEmergenciaTextBox
-            // 
-            this.nomeEmergenciaTextBox.Location = new System.Drawing.Point(108, 527);
-            this.nomeEmergenciaTextBox.Name = "nomeEmergenciaTextBox";
-            this.nomeEmergenciaTextBox.Size = new System.Drawing.Size(144, 20);
-            this.nomeEmergenciaTextBox.TabIndex = 80;
-            // 
-            // parentescoEmergenciaLbl
-            // 
-            this.parentescoEmergenciaLbl.AutoSize = true;
-            this.parentescoEmergenciaLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parentescoEmergenciaLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.parentescoEmergenciaLbl.Location = new System.Drawing.Point(258, 526);
-            this.parentescoEmergenciaLbl.Name = "parentescoEmergenciaLbl";
-            this.parentescoEmergenciaLbl.Size = new System.Drawing.Size(99, 22);
-            this.parentescoEmergenciaLbl.TabIndex = 81;
-            this.parentescoEmergenciaLbl.Text = "Parentesco:";
-            // 
-            // parentescoEmergenciaTextBox
-            // 
-            this.parentescoEmergenciaTextBox.Location = new System.Drawing.Point(352, 528);
-            this.parentescoEmergenciaTextBox.Name = "parentescoEmergenciaTextBox";
-            this.parentescoEmergenciaTextBox.Size = new System.Drawing.Size(144, 20);
-            this.parentescoEmergenciaTextBox.TabIndex = 82;
-            // 
-            // contatoEmergenciaLbl
-            // 
-            this.contatoEmergenciaLbl.AutoSize = true;
-            this.contatoEmergenciaLbl.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contatoEmergenciaLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.contatoEmergenciaLbl.Location = new System.Drawing.Point(502, 527);
-            this.contatoEmergenciaLbl.Name = "contatoEmergenciaLbl";
-            this.contatoEmergenciaLbl.Size = new System.Drawing.Size(76, 22);
-            this.contatoEmergenciaLbl.TabIndex = 83;
-            this.contatoEmergenciaLbl.Text = "Contato:";
-            // 
-            // contatoEmergenciaMaskBox
-            // 
-            this.contatoEmergenciaMaskBox.Location = new System.Drawing.Point(575, 529);
-            this.contatoEmergenciaMaskBox.Mask = "(999)00000-0000";
-            this.contatoEmergenciaMaskBox.Name = "contatoEmergenciaMaskBox";
-            this.contatoEmergenciaMaskBox.Size = new System.Drawing.Size(147, 20);
-            this.contatoEmergenciaMaskBox.TabIndex = 84;
-            // 
-            // contatoEmergenciaMaskBox2
-            // 
-            this.contatoEmergenciaMaskBox2.Location = new System.Drawing.Point(575, 552);
-            this.contatoEmergenciaMaskBox2.Mask = "(999)00000-0000";
-            this.contatoEmergenciaMaskBox2.Name = "contatoEmergenciaMaskBox2";
-            this.contatoEmergenciaMaskBox2.Size = new System.Drawing.Size(147, 20);
-            this.contatoEmergenciaMaskBox2.TabIndex = 90;
-            // 
-            // contatoEmergenciaLbl2
-            // 
-            this.contatoEmergenciaLbl2.AutoSize = true;
-            this.contatoEmergenciaLbl2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contatoEmergenciaLbl2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.contatoEmergenciaLbl2.Location = new System.Drawing.Point(502, 550);
-            this.contatoEmergenciaLbl2.Name = "contatoEmergenciaLbl2";
-            this.contatoEmergenciaLbl2.Size = new System.Drawing.Size(76, 22);
-            this.contatoEmergenciaLbl2.TabIndex = 89;
-            this.contatoEmergenciaLbl2.Text = "Contato:";
-            // 
-            // parentescoEmergenciaTxtBox2
-            // 
-            this.parentescoEmergenciaTxtBox2.Location = new System.Drawing.Point(352, 551);
-            this.parentescoEmergenciaTxtBox2.Name = "parentescoEmergenciaTxtBox2";
-            this.parentescoEmergenciaTxtBox2.Size = new System.Drawing.Size(144, 20);
-            this.parentescoEmergenciaTxtBox2.TabIndex = 88;
-            // 
-            // patentescoEmergenciaLbl2
-            // 
-            this.patentescoEmergenciaLbl2.AutoSize = true;
-            this.patentescoEmergenciaLbl2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patentescoEmergenciaLbl2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.patentescoEmergenciaLbl2.Location = new System.Drawing.Point(258, 549);
-            this.patentescoEmergenciaLbl2.Name = "patentescoEmergenciaLbl2";
-            this.patentescoEmergenciaLbl2.Size = new System.Drawing.Size(99, 22);
-            this.patentescoEmergenciaLbl2.TabIndex = 87;
-            this.patentescoEmergenciaLbl2.Text = "Parentesco:";
-            // 
-            // nomeEmergenciaTxtBox2
-            // 
-            this.nomeEmergenciaTxtBox2.Location = new System.Drawing.Point(108, 550);
-            this.nomeEmergenciaTxtBox2.Name = "nomeEmergenciaTxtBox2";
-            this.nomeEmergenciaTxtBox2.Size = new System.Drawing.Size(144, 20);
-            this.nomeEmergenciaTxtBox2.TabIndex = 86;
-            // 
-            // nomeEmergenciaLbl2
-            // 
-            this.nomeEmergenciaLbl2.AutoSize = true;
-            this.nomeEmergenciaLbl2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeEmergenciaLbl2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.nomeEmergenciaLbl2.Location = new System.Drawing.Point(48, 549);
-            this.nomeEmergenciaLbl2.Name = "nomeEmergenciaLbl2";
-            this.nomeEmergenciaLbl2.Size = new System.Drawing.Size(60, 22);
-            this.nomeEmergenciaLbl2.TabIndex = 85;
-            this.nomeEmergenciaLbl2.Text = "Nome:";
-            // 
-            // salvarPessoaButton
-            // 
-            this.salvarPessoaButton.FlatAppearance.BorderSize = 0;
-            this.salvarPessoaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.salvarPessoaButton.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salvarPessoaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.salvarPessoaButton.Location = new System.Drawing.Point(862, 586);
-            this.salvarPessoaButton.Name = "salvarPessoaButton";
-            this.salvarPessoaButton.Size = new System.Drawing.Size(75, 23);
-            this.salvarPessoaButton.TabIndex = 91;
-            this.salvarPessoaButton.Text = "Salvar";
-            this.salvarPessoaButton.UseVisualStyleBackColor = true;
-            // 
-            // cancelarPessoaButton
-            // 
-            this.cancelarPessoaButton.FlatAppearance.BorderSize = 0;
-            this.cancelarPessoaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelarPessoaButton.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelarPessoaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cancelarPessoaButton.Location = new System.Drawing.Point(781, 586);
-            this.cancelarPessoaButton.Name = "cancelarPessoaButton";
-            this.cancelarPessoaButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelarPessoaButton.TabIndex = 92;
-            this.cancelarPessoaButton.Text = "Cancelar";
-            this.cancelarPessoaButton.UseVisualStyleBackColor = true;
-            this.cancelarPessoaButton.Click += new System.EventHandler(this.cancelarPessoaButton_Click);
             // 
             // TelaInicial
             // 

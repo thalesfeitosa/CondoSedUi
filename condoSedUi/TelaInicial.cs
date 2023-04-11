@@ -97,9 +97,14 @@ namespace condoSedUi
 
         private void encomendasButton_Click(object sender, EventArgs e)
         {
-            cadastroCondominoPanel.Visible = false;
+            
+                cadastroCondominoPanel.Visible = false;
 
-        }
+            
+
+
+        }    
+        
 
 
         public void loginLabel_Click(object sender, EventArgs e)
@@ -298,6 +303,14 @@ namespace condoSedUi
 
 
 
+        }
+
+        private void salvarPessoaButton_Click(object sender, EventArgs e)
+        {
+            CadCondominioClass ccp = new CadCondominioClass(nomeTextBox.Text, blocoTextBox.Text,aptTextBox.Text,telefoneMaskBox.Text,
+                simCheckBox.Text,naoCheckBox.Text,proprietarioTextBox.Text,nomeMoradorTxtBox.Text, nomeMoradorTxtBox2.Text, nomeMoradorTxtBox3.Text,
+                nascimentoMoradorMaskBox.Text, nascimentoMoradorMaskBox2.Text, nascimentoMoradorMaskBox3.Text,);
+            MessageBox.Show(ccp.mensagem);
         }
     }
 }

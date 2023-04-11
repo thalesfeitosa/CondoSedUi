@@ -43,3 +43,4 @@ C:\Github\CondoSedUi\condoSedUi\obj\Release\condoSedUi.csproj.CoreCompileInputs.
 C:\Github\CondoSedUi\condoSedUi\obj\Release\condoSedUi.csproj.CopyComplete
 C:\Github\CondoSedUi\condoSedUi\obj\Release\condoSedUi.exe
 C:\Github\CondoSedUi\condoSedUi\obj\Release\condoSedUi.pdb
+C:\Github\CondoSedUi\condoSedUi\obj\Release\condoSedUi.CadastrarForm.resources
