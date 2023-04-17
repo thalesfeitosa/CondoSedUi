@@ -98,7 +98,9 @@ namespace condoSedUi
         private void encomendasButton_Click(object sender, EventArgs e)
         {
             
-                cadastroCondominoPanel.Visible = false;
+            cadastroCondominoPanel.Visible = false;
+            EncomendasForm Ef = new EncomendasForm();
+            Ef.ShowDialog();
 
             
 
@@ -307,10 +309,24 @@ namespace condoSedUi
 
         private void salvarPessoaButton_Click(object sender, EventArgs e)
         {
-            CadCondominioClass ccp = new CadCondominioClass(nomeTextBox.Text, blocoTextBox.Text,aptTextBox.Text,telefoneMaskBox.Text,
-                simCheckBox.Text,naoCheckBox.Text,proprietarioTextBox.Text,nomeMoradorTxtBox.Text, nomeMoradorTxtBox2.Text, nomeMoradorTxtBox3.Text,
-                nascimentoMoradorMaskBox.Text, nascimentoMoradorMaskBox2.Text, nascimentoMoradorMaskBox3.Text,);
+            CadCondominioClass ccp = new CadCondominioClass(nomeTextBox.Text, blocoTextBox.Text, aptTextBox.Text, telefoneMaskBox.Text,
+                simCheckBox.Checked, naoCheckBox.Checked, proprietarioTextBox.Text, nomeMoradorTxtBox.Text, nomeMoradorTxtBox2.Text, nomeMoradorTxtBox3.Text,
+                nascimentoMoradorMaskBox.Text, nascimentoMoradorMaskBox2.Text, nascimentoMoradorMaskBox3.Text, garagemSimCheckBox.Checked,tipoTxtBox.Text, tipoTxtBox2.Text, tipoTxtBox3.Text,
+                marcaTxtBox.Text, marcaTxtBox2.Text, marcaTxtBox3.Text, modeloTxtBox.Text, modeloTxtBox2.Text, modeloTxtBox3.Text, placaTxtBox.Text, placaTxtBox2.Text, placaTxtBox3.Text,
+                animaisCheckBoxSim.Checked, gatoCheckBox.Checked, cachorroCheckBox.Checked, outrosCheckBox.Checked, outroTextBox.Text, nomeEmergenciaTextBox.Text, nomeEmergenciaTxtBox2.Text, parentescoEmergenciaTextBox.Text,
+                parentescoEmergenciaTxtBox2.Text, contatoEmergenciaMaskBox.Text, contatoEmergenciaMaskBox2.Text);
             MessageBox.Show(ccp.mensagem);
+        }
+
+        private void prestadoresServicoButton_Click(object sender, EventArgs e)
+        {
+            cadastroCondominoPanel.Visible = false;
+
+        }
+
+        private void relatoriosButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("RECURSO EM DESENVOLVIMENTO");
         }
     }
 }

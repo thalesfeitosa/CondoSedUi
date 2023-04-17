@@ -11,6 +11,7 @@ using Npgsql.Internal;
 
 
 
+
 namespace condoSedUi
 {
     public class ConexaoBd

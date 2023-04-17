@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.prestadoresServicoButton = new System.Windows.Forms.Button();
             this.relatoriosButton = new System.Windows.Forms.Button();
             this.bdButton = new System.Windows.Forms.Button();
             this.achadosPerdidosButton = new System.Windows.Forms.Button();
@@ -138,6 +139,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.prestadoresServicoButton);
             this.panel1.Controls.Add(this.relatoriosButton);
             this.panel1.Controls.Add(this.bdButton);
             this.panel1.Controls.Add(this.achadosPerdidosButton);
@@ -151,6 +153,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 624);
             this.panel1.TabIndex = 0;
+            // 
+            // prestadoresServicoButton
+            // 
+            this.prestadoresServicoButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.prestadoresServicoButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.prestadoresServicoButton.FlatAppearance.BorderSize = 0;
+            this.prestadoresServicoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prestadoresServicoButton.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prestadoresServicoButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.prestadoresServicoButton.Location = new System.Drawing.Point(0, 285);
+            this.prestadoresServicoButton.Name = "prestadoresServicoButton";
+            this.prestadoresServicoButton.Size = new System.Drawing.Size(186, 23);
+            this.prestadoresServicoButton.TabIndex = 9;
+            this.prestadoresServicoButton.Text = "Prestadores de Serviço";
+            this.prestadoresServicoButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.prestadoresServicoButton.UseVisualStyleBackColor = true;
+            this.prestadoresServicoButton.Click += new System.EventHandler(this.prestadoresServicoButton_Click);
             // 
             // relatoriosButton
             // 
@@ -167,6 +186,7 @@
             this.relatoriosButton.Text = "Relatórios";
             this.relatoriosButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.relatoriosButton.UseVisualStyleBackColor = true;
+            this.relatoriosButton.Click += new System.EventHandler(this.relatoriosButton_Click);
             // 
             // bdButton
             // 
@@ -1402,5 +1422,6 @@
         private System.Windows.Forms.TextBox nomeEmergenciaTextBox;
         private System.Windows.Forms.Label nomeEmergenciaLbl;
         private System.Windows.Forms.Label contatoEmergenciaLabel;
+        private System.Windows.Forms.Button prestadoresServicoButton;
     }
 }

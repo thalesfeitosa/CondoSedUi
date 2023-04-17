@@ -109,6 +109,13 @@
     <Compile Include="ConfigBD.Designer.cs">
       <DependentUpon>ConfigBD.cs</DependentUpon>
     </Compile>
+    <Compile Include="EncomendasClass.cs" />
+    <Compile Include="EncomendasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EncomendasForm.Designer.cs">
+      <DependentUpon>EncomendasForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConfigBD.resx">
       <DependentUpon>ConfigBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EncomendasForm.resx">
+      <DependentUpon>EncomendasForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
