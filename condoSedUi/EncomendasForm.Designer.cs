@@ -257,6 +257,7 @@
             this.encomendaSaveButton.TabIndex = 15;
             this.encomendaSaveButton.Text = "Salvar";
             this.encomendaSaveButton.UseVisualStyleBackColor = true;
+            this.encomendaSaveButton.Click += new System.EventHandler(this.encomendaSaveButton_Click);
             // 
             // buscarTxtBox
             // 
@@ -340,6 +341,7 @@
             this.Name = "EncomendasForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EncomendasForm";
+            this.Load += new System.EventHandler(this.EncomendasForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.encomendasGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

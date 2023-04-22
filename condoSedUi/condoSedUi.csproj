@@ -101,6 +101,7 @@
       <DependentUpon>CadastrarForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CadCondominioClass.cs" />
+    <Compile Include="CadEncomendaClass.cs" />
     <Compile Include="CadUsuarioClass.cs" />
     <Compile Include="ConexaoBd.cs" />
     <Compile Include="ConfigBD.cs">
